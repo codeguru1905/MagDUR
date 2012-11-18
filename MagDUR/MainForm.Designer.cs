@@ -32,7 +32,7 @@
             this.ribbonControlAdv1 = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
             this.toolStripTabItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx1 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.rbtnCreateDB = new System.Windows.Forms.ToolStripButton();
             this.panelItemDB = new Syncfusion.Windows.Forms.Tools.ToolStripPanelItem();
             this.rbtnOpenDB = new System.Windows.Forms.ToolStripButton();
             this.rbtnInsertDB = new System.Windows.Forms.ToolStripButton();
@@ -112,22 +112,23 @@
             this.toolStripEx1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStripEx1.Image = null;
             this.toolStripEx1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
+            this.rbtnCreateDB,
             this.panelItemDB});
             this.toolStripEx1.Location = new System.Drawing.Point(0, 1);
             this.toolStripEx1.Name = "toolStripEx1";
-            this.toolStripEx1.Size = new System.Drawing.Size(147, 87);
+            this.toolStripEx1.Size = new System.Drawing.Size(178, 87);
             this.toolStripEx1.TabIndex = 0;
             // 
-            // toolStripButton1
+            // rbtnCreateDB
             // 
-            this.toolStripButton1.Image = global::MagDUR.Properties.Resources.database;
-            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(69, 66);
-            this.toolStripButton1.Text = "Nowa Baza";
-            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.rbtnCreateDB.Image = global::MagDUR.Properties.Resources.database;
+            this.rbtnCreateDB.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.rbtnCreateDB.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.rbtnCreateDB.Name = "rbtnCreateDB";
+            this.rbtnCreateDB.Size = new System.Drawing.Size(69, 66);
+            this.rbtnCreateDB.Text = "Nowa Baza";
+            this.rbtnCreateDB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.rbtnCreateDB.Click += new System.EventHandler(this.rbtnCreateDB_Click);
             // 
             // panelItemDB
             // 
@@ -175,7 +176,7 @@
             this.toolStripEx2.Image = null;
             this.toolStripEx2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton2});
-            this.toolStripEx2.Location = new System.Drawing.Point(149, 1);
+            this.toolStripEx2.Location = new System.Drawing.Point(180, 1);
             this.toolStripEx2.Name = "toolStripEx2";
             this.toolStripEx2.Size = new System.Drawing.Size(87, 87);
             this.toolStripEx2.TabIndex = 1;
@@ -198,7 +199,7 @@
             this.toolStripEx3.Image = null;
             this.toolStripEx3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton3});
-            this.toolStripEx3.Location = new System.Drawing.Point(238, 1);
+            this.toolStripEx3.Location = new System.Drawing.Point(269, 1);
             this.toolStripEx3.Name = "toolStripEx3";
             this.toolStripEx3.Size = new System.Drawing.Size(66, 87);
             this.toolStripEx3.TabIndex = 2;
@@ -221,7 +222,7 @@
             this.toolStripEx4.Image = null;
             this.toolStripEx4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.rbtnExit});
-            this.toolStripEx4.Location = new System.Drawing.Point(306, 1);
+            this.toolStripEx4.Location = new System.Drawing.Point(337, 1);
             this.toolStripEx4.Name = "toolStripEx4";
             this.toolStripEx4.Size = new System.Drawing.Size(58, 87);
             this.toolStripEx4.TabIndex = 3;
@@ -367,7 +368,7 @@
         private Syncfusion.Windows.Forms.Tools.SplitContainerAdv splitContainerAdv1;
         private Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl grid;
         private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton rbtnCreateDB;
         private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx2;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private Syncfusion.Windows.Forms.Tools.ToolStripEx toolStripEx3;

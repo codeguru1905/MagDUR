@@ -81,5 +81,10 @@ namespace MagDUR
                 }
             }
         }
+
+        private void rbtnCreateDB_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
